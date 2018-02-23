@@ -1,4 +1,6 @@
 const ENTER = 13
+const COMMA = 44
+const SEMICOLON = 59
 const LEFT = 37
 const UP = 38
 const RIGHT = 39
@@ -12,6 +14,8 @@ export default function drive(which, tagManager) {
 
   const eventMap = {
     [ENTER]: execute(tagManager.create),
+    [COMMA]: execute(tagManager.create),
+    [SEMICOLON]: execute(tagManager.create),
     [RIGHT]: execute(tagManager.next),
     [DOWN]: execute(tagManager.next),
     [UP]: execute(tagManager.prev),
